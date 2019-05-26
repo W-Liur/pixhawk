@@ -4,6 +4,11 @@ git commit -m "123"
 git push origin master
 git push origin master:v1.8.2
 
+git branch  查看分支
+git checkout -b dev 新建分支 并移动到dev
+git status 查看分支情况
+git branch -d dev 删除分支dev
+
 
 git remote -v
 git remote get-url origin
@@ -20,3 +25,7 @@ git push origin_207 v1.8.2
 git push origin hello_git_branch:master还有一种方法，可以指定提交到远程仓库的某个分支上。如下，是将hello_git_branch分支提交到远程仓库的master上面
   
 如果在v1.8.2分支无法上传到github 可以删除master分支  在新建一个master分支（由于master分支与1.8.2版本冲突） 然后mergy到master分枝上 就可以了
+
+如果提示..v1.8.2无法合成到master上   可以新建一个分之tianshao  然后讲tianshao合并到master上
+这样master就有了新修改的文件   并且执行 git push origin master 就可以将本地master push到 github网站上了
+
