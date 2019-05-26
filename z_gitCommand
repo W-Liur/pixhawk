@@ -1,0 +1,22 @@
+
+git add .   添加文件到远程
+git commit -m "123"
+git push origin master
+git push origin master:v1.8.2
+
+
+git remote -v
+git remote get-url origin
+git remote set-url origin git@github.com:pannitianshao/pixhawk.git 
+                          
+                           https://github.com/PX4/Firmware.git
+
+git remote add origin <你的项目地址>     添加远程和移除远程
+git remote rm origin                       
+
+git pull --rebase origin_207 master拉取远程的文件把本地的覆盖，再上传
+git push origin_207 master -f  本地强制上传到远程，把远程的覆盖
+git push origin_207 v1.8.2
+git push origin hello_git_branch:master还有一种方法，可以指定提交到远程仓库的某个分支上。如下，是将hello_git_branch分支提交到远程仓库的master上面
+  
+如果在v1.8.2分支无法上传到github 可以删除master分支  在新建一个master分支（由于master分支与1.8.2版本冲突） 然后mergy到master分枝上 就可以了
