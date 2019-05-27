@@ -110,6 +110,7 @@ int test_acc_gyro_xyz_main(int argc, char *argv[])
 			 * if (fds[1..n].revents & POLLIN) {}
 			 */
                       PX4_INFO("test is:\t%8.4f\t%8.4f\t%8.4f\t%8.4f\t%8.4f\t%8.4f",
+                        //!!! must add (double) in the front of variable!!!!
                            (double)test.gyro_x,(double)test.gyro_y ,(double)test.gyro_z,
                            (double)test.acc_x, (double)test.acc_y,  (double)test.acc_z);  
 		      orb_publish(ORB_ID(test_acc_gyro_xyz), test_pub, &test);    
